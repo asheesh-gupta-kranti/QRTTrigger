@@ -90,12 +90,12 @@ public class MainActivity extends AppCompatActivity {
             payload.put("tripStartLoc", tripStartLoc);
 
             String url = baseUrl + "/api/trips";
-
+            Log.d("payload", payload.toString());
             UTF8JsonObjectRequest request = new UTF8JsonObjectRequest(Request.Method.POST, url, payload, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
                     Log.d("Trip response", response.toString());
-
+                    Toast.makeText(MainActivity.this, "Successful", Toast.LENGTH_SHORT).show();
                   progressBar.setVisibility(View.GONE);
                   initCurrentLocation();
 
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     Log.e("error", "" + error);
                     progressBar.setVisibility(View.GONE);
-
+                    Toast.makeText(MainActivity.this, "Something went wrong.", Toast.LENGTH_SHORT).show();
                 }
             }) {
 
@@ -246,14 +246,14 @@ public class MainActivity extends AppCompatActivity {
 
             String url = baseUrl + "/api/triggers";
 
-
+            Log.d("payload", payload.toString());
             UTF8JsonObjectRequest request = new UTF8JsonObjectRequest(Request.Method.POST, url, payload, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
                     Log.d("Trip response", response.toString());
 
                     progressBar.setVisibility(View.GONE);
-                    initCurrentLocation();
+                    Toast.makeText(MainActivity.this, "Successful", Toast.LENGTH_SHORT).show();
 
                 }
             }, new Response.ErrorListener() {
@@ -261,7 +261,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     Log.e("error", "" + error);
                     progressBar.setVisibility(View.GONE);
-
+                    Toast.makeText(MainActivity.this, "Something went wrong.", Toast.LENGTH_SHORT).show();
                 }
             }) {
 
