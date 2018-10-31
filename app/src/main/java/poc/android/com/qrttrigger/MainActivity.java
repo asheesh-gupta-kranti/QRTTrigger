@@ -2,10 +2,13 @@ package poc.android.com.qrttrigger;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -60,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 progressBar.setVisibility(View.VISIBLE);
+                Intent intent = new Intent(MainActivity.this, BacgroundService.class);
+                MainActivity.this.stopService(intent);
                 startTripPost();
             }
         });
@@ -80,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
             JSONObject payload = new JSONObject();
             tripId = "t"+ Calendar.getInstance().getTimeInMillis();
+            setTripId(this, tripId);
             payload.put("orgId", "uber");
             payload.put("tripId", tripId);
             payload.put("tripStartTime", getDateString(new Date(), "yyyy-MM-dd'T'HH:mm:ss'Z'"));
@@ -244,6 +250,8 @@ public class MainActivity extends AppCompatActivity {
             payload.put("triggerdLocation", triggerdLocation);
             payload.put("tripId", tripId);
 
+            Log.d("payload", payload.toString());
+
             String url = baseUrl + "/api/triggers";
 
             Log.d("payload", payload.toString());
@@ -251,9 +259,10 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     Log.d("Trip response", response.toString());
-
+                    btnTrigger.setEnabled(false);
                     progressBar.setVisibility(View.GONE);
                     Toast.makeText(MainActivity.this, "Successful", Toast.LENGTH_SHORT).show();
+                    startLocationService();
 
                 }
             }, new Response.ErrorListener() {
@@ -286,5 +295,40 @@ public class MainActivity extends AppCompatActivity {
             Log.d("error", ex.getMessage());
         }
 
+    }
+
+    public static void setTripId(Context context, String tripId) {
+
+        SharedPreferences pref = context.getSharedPreferences("Pref",
+                Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("tripId", tripId);
+        editor.apply();
+
+    }
+
+    public static String getTripId(Context context) {
+        SharedPreferences prefs = context.getSharedPreferences("Pref", Context.MODE_PRIVATE);
+        return prefs.getString("tripId", "");
+    }
+
+    private void startLocationService(){
+//        Intent serviceIntent = new Intent(this, ResponderLocationService.class);
+//        startService(serviceIntent);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+            try{
+                Intent foregroundIntent = new Intent(this, BacgroundService.class);
+                this.startForegroundService(foregroundIntent);
+            }catch (Exception ex){
+                ex.printStackTrace();
+            }
+
+        }else{
+            Intent foregroundIntent = new Intent(this, BacgroundService.class);
+            this.startService(foregroundIntent);
+
+        }
     }
 }
