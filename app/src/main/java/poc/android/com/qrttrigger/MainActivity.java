@@ -259,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Log.e("error", "" + error);
+                    Log.e("error", "" + error.getLocalizedMessage());
                     progressBar.setVisibility(View.GONE);
                     Toast.makeText(MainActivity.this, "Something went wrong.", Toast.LENGTH_SHORT).show();
                 }
