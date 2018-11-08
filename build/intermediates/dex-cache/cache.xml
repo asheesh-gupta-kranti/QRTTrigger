@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/f6dc59a1f2e09b804f720b05c147b99c/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2feadd535770271ca57b7b431f42151aa4af324a">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cc3c11d43832627090ab63b14e126863/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="23dcb4803d3103bde3f3f5db978a726338fe49ae">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/ebf6a80d2e0a753232a029d95936f2f0/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ed8395f343c428cd55c60499f04323083f4ef0db">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0d6e73c5d0d37144210c58c289684ec2/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="874f1143c11f5d38533efe512bf913e3e847e7df">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/1134432a5e36348f2559aca14e121606/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3304d33470ff64cf83bce9189ff3648a42eb2aa7">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/7ddadcea159a01f9ef944fb44e56c34e/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a6a1348ac6f3e2890a2cd7637b1e18f969ccc1e5">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/3d5b21f493d1ed8857ac8cd80d73fc1d/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e2bbe48deed35056023eed2cdc0cc92e5c7d3617">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/1dc2c0b69b9e4ab02003aa0e2c2a1a25/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c9a721adcd7dbae7a197b0ef81102336539f63ff">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b95051433472e66c22e191b9a53909ad/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ec657bb192b20229696216bf233779b16bf75a54">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/936695709193e6df4e7b4d54555c61cc/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0d8e1d815492b141239a01c77302ad68/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d968b9bd0011800e0d333d1571b8d34bcb8a0b6e">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0f5cd3c6d36d7b0be3b60f392d97c321/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/56f55109ce3157e7e29251b5ef983e07/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1fd3ceac7f415975323d52c6c6057db409a907f6">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.1.aar/3217bf6679b82b46e0faaf97dd8afaf1/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="16f423bae182fd81553d109269f7a5e13fd1cb52">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bde0667d7414c16ed62d3cfe993cff7f9d732373">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/02f4e63fec8f94c5407de195397545ea/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8a9fd7c97f1d13f97f3b52f9d2e54cd857d5acf9">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/43ca8bdf99aef4a67c82c48fb9ee3387/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="71d380aeac037e63bab7bda2ba211777e16a2f42">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/4906bd979e57a13ed4942a698a920d89/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b15c6ded887ad967e20bb335c1a121b253c04dce">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/e978ef15849e9749f14c3e8cb0e263eb/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a38a8974c8d066800237d22a86df2e88cb9e065c">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/djubo/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/a52bbeadf0ca08b959f73f02abac57f1/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="22569eca3029ab00583c332a2be220cdbf091b35">
+        <dex dex="/home/djubo/Asheesh/workspace/QRTTrigger/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+
+</items>

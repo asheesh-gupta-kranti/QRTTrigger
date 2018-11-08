@@ -16,7 +16,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private  Location myLocation;
     private String tripId;
+    private LinearLayout llInfo;
+    private TextView tvTripId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
         btnStartTrip = findViewById(R.id.btn_start_trip);
         btnTrigger = findViewById(R.id.btn_trigger);
         progressBar = findViewById(R.id.progress_bar);
+        llInfo = findViewById(R.id.ll_info);
+        tvTripId = findViewById(R.id.tv_trip_id);
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
@@ -63,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 progressBar.setVisibility(View.VISIBLE);
+                llInfo.setVisibility(View.GONE);
                 Intent intent = new Intent(MainActivity.this, BackgroundService.class);
                 MainActivity.this.stopService(intent);
                 startTripPost();
@@ -73,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 progressBar.setVisibility(View.VISIBLE);
+                llInfo.setVisibility(View.VISIBLE);
+                tvTripId.setText(tripId);
                 triggerPost();
             }
         });
