@@ -85,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
                 triggerPost();
             }
         });
+
+        findViewById(R.id.btn_end_trigger).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.this.stopService(new Intent(MainActivity.this, BackgroundService.class));
+            }
+        });
     }
 
 
@@ -260,6 +267,7 @@ public class MainActivity extends AppCompatActivity {
             payload.put("tripId", tripId);
 
             String url = baseUrl + "/api/triggers";
+            Log.d("url", url);
 
             Log.d("payload", payload.toString());
             UTF8JsonObjectRequest request = new UTF8JsonObjectRequest(Request.Method.POST, url, payload, new Response.Listener<JSONObject>() {
